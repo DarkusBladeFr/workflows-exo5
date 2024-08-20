@@ -11,6 +11,11 @@ on:
       - develop
   schedule:
     - cron: "0 0 * * 1"
+    # note pour m'aider avec les schedule
+    # 0 0 = l'heure d'exécution, ici 00h00, premier = minute et deuxième = heure
+    # * * = chaque jour du mois, chaque mois
+    # 1 = lundi puisque 0 = dimanche et 6 = samedi
+    # Ainsi, j'en déduis qu'il s'appliquera tous les lundis de chaque semaines de chaque mois à 00h00
 
 jobs:
   build:
